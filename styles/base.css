@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #course-title {
@@ -65,7 +65,7 @@ main h1 {
     border: 1px solid black;
     border-radius: 0.5em;
     background-color: lightgray;
-    line-height: 1.5;
+    line-height: 2.2;
 }
 
 .card h2 {
@@ -83,7 +83,7 @@ main h1 {
 .profile {
     float: right;
     margin: 15px 20px;
-    width: 200px;
+    width: 350px;
     height: auto;
 }
 
@@ -93,6 +93,11 @@ main h1 {
     display: block;
     justify-self: center;
     margin-top: 15px;
+}
+
+.card a {
+    display: grid;
+    justify-items: center;
 }
 
 footer {
