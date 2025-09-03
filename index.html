@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd130</title>
+    <meta name="description" content="Johann Vasquez Home page for WDD131 Dynamic Web Fundamentals course at BYU">
+    <meta name="author" content="Johann Vasquez">
+    <title>WDD 131 – Dynamic Web Fundamentals – Johann Vasquez</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Hi</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellat quos deleniti iste non? Rerum nemo debitis quis, maiores doloremque nulla facere enim nihil fugiat beatae hic explicabo ipsa cumque.</p>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals - Johann Vasquez</span>
+        <nav>
+            <ul>
+                <li><a class="linkedin"
+                        href="https://www.linkedin.com/in/johann-alexander-v%C3%A1squez-madero-169858357/">LinkedIn</a>
+                </li>
+                <li><a class="canvas" href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a class="scripture"
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26">Scripture</a>
+                </li>
+                <li><a class="final">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Johann Vasquez</h1>
+        <section class="card">
+            <h2>Who am I?</h2>
+            <img class="profile" src="images/profile.webp" alt="Profile Picture">
+            <p>Hi! My name is Johann Vasquez, and I'm from Panama City, Panama. I have a deep passion
+                for computers and
+                programming, especially exploring new technologies and solving complex problems through code. I’m
+                currently
+                studying software development at BYU, and I’m constantly amazed by how much there is to learn and
+                the
+                endless possibilities technology offers.I'm particularly excited about web development and understanding
+                how web pages function behind the scenes. I
+                want to master building dynamic, user-friendly applications. Beyond coding, I enjoy collaborating on
+                projects, learning from others, and staying updated with the latest industry trends.
+                My goal is to become a well-rounded developer, contribute to meaningful projects, and maybe even launch
+                my
+                own startup one day. The tech field is always evolving, and I love the challenge of keeping up with new
+                advancements. Whether it's debugging code, designing interfaces, or optimizing performance, I find every
+                aspect of development fascinating. I can't wait to see where this journey takes me and the impact I can
+                make
+                in the digital world!
+            </p>
+        </section>
+        <section class="card">
+            <h2>Where do I live?</h2>
+            <img class="panama" src="images/panama.webp" alt="Panama City">
+            <p>My home, Panama City, is a symphony of vibrant life. The tropical sun glints off the glass
+                towers of its modern skyline, while below, weathered fishermen mend their nets along the bustling
+                waterfront. Just a short walk away, the Casco Viejo—the old town—unfolds in a cascade of cobblestone
+                streets, pastel-colored colonial buildings, and lively plazas filled with the aroma of sizzling empanadas.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> / Johann Vasquez / Panama</p>
+        <p class="date">Last Modification: <span id="lastmodified"></span></p>
+    </footer>
 </body>
+
 </html>
