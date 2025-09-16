@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panama</title>
+    <meta name="description"
+        content="Learn about Panama’s geography, population, capital, language, currency, and weather. Discover essential facts about this Central American country, including its time zone and calling code.">
+    <meta name="author" content="Johann Vasquez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Panama</h1>
+    </header>
+    <main>
+        <div class="content">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1024px)">
+                    <img src="images/hero-mobile.webp" alt="Hero Image">
+                </picture>
+
+                <div class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 75,517 sq km</li>
+                        <li><strong>Population:</strong> 4,517,000</li>
+                        <li><strong>Capital:</strong> Panama City</li>
+                        <li><strong>Languages:</strong> Spanish, English</li>
+                        <li><strong>Currency:</strong> US Dollar (USD)</li>
+                        <li><strong>Time Zone:</strong> UTC-5</li>
+                        <li><strong>Calling Code:</strong> +507</li>
+                        <li><strong>Internet TLD:</strong> .pa</li>
+                    </ul>
+                </div>
+
+                <div class="weather">
+                    <h2 class="weather-heading">Weather</h2>
+                    <img class="svg-icon" src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Weather Icon">
+                    <ul>
+                        <li><strong>Temperature:</strong> 27°C</li>
+                        <li><strong>Conditions:</strong> Partly Cloudy</li>
+                        <li><strong>Wind:</strong> 8 km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> / Johann Vasquez / Panama</p>
+        <p class="date">Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+
+</html>
