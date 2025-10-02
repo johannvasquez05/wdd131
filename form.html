@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Leave a quick product review. Share ratings, comments, and feedback to help us improve our products.">
+    <meta name="author" content="Johann Vasquez">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Course Subject
+                    <select id="productname" name="subject" required>
+                        <option value="" disabled selected>Select a Product &#9662;</option>
+                        <option value="software">Software Development</option>
+                        <option value="software2">Software Development</option>
+                        <option value="software3">Software Development</option>
+                        <option value="software4">Software Development</option>
+                        <option value="software5">Software Development</option>
+                    </select>
+
+                    <label>Overall Rating</label>
+                    <label><input id="star1" type="radio" name="audience" value="beginner" required>☆</label>
+                    <label><input id="star2" type="radio" name="audience" value="itermidiate" required>☆☆</label>
+                    <label><input id="star3" type="radio" name="audience" value="advanced" required>☆☆☆</label>
+                    <label><input id="star4" type="radio" name="audience" value="itermidiate" required>☆☆☆☆</label>
+                    <label><input id="star5" type="radio" name="audience" value="advanced" required>☆☆☆☆☆</label>
+
+                    <label>Date of Installation <input id="installation" type="date" name="installationDate"
+                            required></label>
+
+                    <label>Which features did you find useful in the product?<br><span>(Check all
+                            that apply)</span></label>
+                    <label><input id="checkbox1" type="checkbox" name="durability" value="good"> Durability</label>
+                    <label><input id="checkbox2" type="checkbox" name="easeUse" value="good"> Ease of Use</label>
+                    <label><input id="checkbox3" type="checkbox" name="perfomance" value="good"> Perfomance</label>
+                    <label><input id="checkbox4" type="checkbox" name="desing" value="good"> Desing</label>
+
+                    <label>Written Review</label>
+                    <textarea id="review" name="review"></textarea>
+
+                    <label>Your name<input id="name" type="text" name="fullname"></label>
+
+                    <input type="submit" value="Propose My Course">
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> / Johann Vasquez / Panama</p>
+        <p class="date">Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+
+</body>
+
+</html>

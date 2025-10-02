@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #1E1E2F;
+  /* Header, nav, footer */
+  --secondary-color: #EAEAEA;
+  /* Section background */
+  --accent-color: #00B894;
+  /* Buttons, highlights */
+  --text-light: #FFFFFF;
+  /* Text on dark background */
+  --text-dark: #222222;
+  /* Text on light background */
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: var(--font-heading);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  background-color: var(--secondary-color);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-family: var(--font-heading);
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: var(--text-dark);
+}
+
+section p {
+  font-size: large;
+  max-width: 600px;
+  margin: auto;
+  color: var(--text-dark);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.wireframe figure {
+  text-align: center;
+  background-color: var(--accent-color);
+  margin: 20px;
+  width: 700px;
+  justify-self: center;
+  border: 1px solid black;
+  border-radius: .5em;
+}
+
+.desktop {
+  margin: 25px;
+  max-width: 600px;
+}
+
+.mobile {
+  margin: 25px;
+  max-height: 800px;
+}
+
+.wireframe figcaption {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+
+.wf1 fieldset {
+    border: none;
+    margin: 2rem 0;
+    background-color: rgb(214, 213, 213);
+    border-radius: 2.5px;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 textarea {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 380px;
+    appearance: none;
+}
+
+.wf1 select {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 405px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    max-width: 408px;
+    margin: 25px 0 17px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 label input[type="radio"] {
+    display: block;
+}
