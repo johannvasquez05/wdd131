@@ -1,10 +1,12 @@
 h1 {
     text-align: center;
+    background-color: #9c2c13;
+    color: white;
+    padding: 30px;
 }
 
 .wf1 fieldset {
     border: none;
-    margin: 2rem 0;
     background-color: rgb(214, 213, 213);
     border-radius: 2.5px;
 }
@@ -16,6 +18,10 @@ h1 {
     font-size: .9rem;
 }
 
+fieldset span {
+    color: darkblue;
+    font-weight: bold;
+}
 
 .wf1 input[type="text"],
 .wf1 input[type="date"],
@@ -31,6 +37,9 @@ h1 {
     appearance: none;
 }
 
+textarea {
+    height: 75px;
+}
 .wf1 select {
     background-color: #eee;
     display: block;
@@ -60,6 +69,34 @@ h1 {
     box-shadow: 1px 1px 4px #999;
 }
 
-.wf1 label input[type="radio"] {
-    display: block;
+.wf1 input[type="submit"]:hover {
+  background-image: linear-gradient(#b33416, #7f2410);
+  cursor: pointer;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.rating-option label {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+footer {
+    text-align: center;
+    background-color: #9c2c13;
+    color: white;
+    margin-top: 25px;
+    padding: 10px;
 }
