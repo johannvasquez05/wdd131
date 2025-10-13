@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #1E1E2F;
+    --secondary-color: #EAEAEA;
+    --accent-color: #00B894;
+    --text-light: #FFFFFF;
+    --text-dark: #222222;
+    --font-heading: "Montserrat", serif;
+    --font-body: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 150px;
+    border-radius: 0.2em;
+    background-color: var(--secondary-color);
+}
+
+#menu {
+    margin-left: auto;
+    margin-right: 1rem;
+    color: var(--text-light);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    position: relative;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "✕";
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.hero {
+    color: var(--text-light);
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.theme-toggle h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.button {
+    background-color: rgba(0, 155, 128, 0.25);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+    font-size: medium;
+}
+
+.button:hover {
+    background-color: #009b80;
+}
+
+.components {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+.component-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
+}
+
+.component-card img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+body[data-theme="dark"] {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+body[data-theme="dark"] .component-card {
+    background-color: #2B2B3C;
+}
+
+body[data-theme="dark"] h2 {
+    color: var(--text-light);
+}
+
+body[data-theme="light"] #toggle-components {
+    color: var(--text-dark);
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid var(--accent-color);
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+footer a {
+    color: var(--text-light);
+}
+
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        position: static;
+        background: none;
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+    }
+}

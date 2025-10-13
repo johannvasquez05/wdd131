@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step PC building guide with helpful tips.">
+    <meta name="author" content="Johann Vasquez">
+    <title>Step-By-Step | Build Your PC</title>
+    <link rel="stylesheet" href="styles/guide.css">
+    <script src="scripts/buildyourpc.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/buildyourpc-logo.png" alt="Build Your PC logo">
+        </div>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="components.html" class="active">Components</a></li>
+                <li><a href="guide.html">Step-by-Step Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="guide-section">
+            <h2>Step-by-Step PC Building Guide</h2>
+            <button id="toggle-guide" class="toggle-btn">Show Steps</button>
+            <div id="guide-container" class="guide-container"></div>
+
+        </section>
+
+        <section class="feedback-section">
+            <h2>Share Your Feedback</h2>
+            <form id="rating-form">
+                <label>Your name:<input id="name" type="text" name="fullname" required></label>
+                <label for="rating">Rate this guide:</label>
+                <select id="rating" required>
+                    <option value="">-- Select --</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+                    <option value="4">⭐️⭐️⭐️⭐️ Great</option>
+                    <option value="3">⭐️⭐️⭐️ Okay</option>
+                    <option value="2">⭐️⭐️ Poor</option>
+                    <option value="1">⭐️ Bad</option>
+                </select>
+
+                <label for="comments">Additional comments or advice:</label>
+                <textarea id="comments" rows="4" placeholder="Write your thoughts here..."></textarea>
+
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Johann Vasquez — Panama</p>
+        <p class="date">Last Modified: <span id="lastmodified"></span></p>
+        <a href="references.html">References</a>
+    </footer>

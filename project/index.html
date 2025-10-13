@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Build Your Own PC: A Beginner’s Guide to Computer Assembly. Learn how to choose components, assemble your setup, and build the perfect computer.">
+    <meta name="author" content="Johann Vasquez">
+    <title>Build Your PC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/buildyourpc.css">
+    <script defer src="scripts/buildyourpc.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/buildyourpc-logo.png" alt="Build Your PC logo">
+        </div>
+        <button type="button" id="menu" aria-label="Open menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="guide.html">Step-by-Step Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <picture>
+                    <source srcset="images/pc-building-hero-large.webp" media="(min-width: 768px)">
+                    <img src="images/pc-building-hero.webp" alt="Person assembling a PC" class="hero-image"
+                        loading="lazy">
+                </picture>
+                <div class="hero-text">
+                    <h1>Build Your Own PC</h1>
+                    <p>Learn how to assemble your custom computer with our beginner-friendly guide.</p>
+                    <a href="guide.html">Start Building</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Why Build Your Own PC?</h2>
+            <p>
+                Building your own PC gives you control over performance, design, and budget.
+                Learn about each component, how they fit together, and how to assemble them safely.
+            </p>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <img src="images/components.webp" alt="Computer components" loading="lazy">
+                <h3>PC Components Explained</h3>
+                <p>Understand the purpose of each part — from CPU to GPU — and how to choose the best for your needs.
+                </p>
+                <a href="components.html">Learn now!</a>
+            </div>
+            <div class="card">
+                <img src="images/assembly.webp" alt="Hand assembling a Ram in a motherboard" loading="lazy">
+                <h3>Step-by-Step Assembly</h3>
+                <p>Follow our detailed assembly guide to safely and successfully build your dream computer.</p>
+                <a href="guide.html">Assemble yours now!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Johann Vasquez — Panama</p>
+        <p class="date">Last Modification: <span id="lastmodified"></span></p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+
+</html>
